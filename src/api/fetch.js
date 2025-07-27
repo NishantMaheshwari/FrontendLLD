@@ -1,18 +1,27 @@
 const callAPI = async (url, method = 'POST', payload = {}) => {
-  const response = await fetch(url, {
+  const options = {
     method,
-    body: JSON.stringify(payload),
     headers: {
       'Content-type': 'application/json'
     }
-  });
-  if(!response.ok){
+  }
+  if(method !== 'GET'){
+    options.body = JSON.stringify(payload);
+  }
+  const response = await fetch(url, options);
+  if (!response.ok) {
     const errorData = await response.json();
     throw new Error(errorData.error?.message || 'API Error');
   }
-  return await response.json();
+  const data = await response.json();
+  return data;
 };
 
-export const shimmerData = async () => {
-  const data = await callAPI('','GET');
+export const fetchShimmerData = async () => {
+  try {
+    const data = await callAPI('https://meme-api.com/gimme/20','GET');
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 }
