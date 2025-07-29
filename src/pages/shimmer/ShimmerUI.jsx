@@ -12,8 +12,8 @@ const ShimmerUI = () => {
 
   useEffect(() => {
     async function loadMemes() {
-      const dataMemes = await fetchMemes();
-      setMemes(dataMemes.memes);
+      const fetchedMemes = await fetchMemes();
+      setMemes(fetchedMemes.memes);
     }
     loadMemes();
   }, []);

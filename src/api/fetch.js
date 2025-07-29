@@ -17,9 +17,9 @@ const callAPI = async (url, method = 'POST', payload = {}) => {
   return data;
 };
 
-export const fetchShimmerData = async () => {
+export const fetchShimmerData = async (amountOfMemes = 20) => {
   try {
-    const data = await callAPI('https://meme-api.com/gimme/20','GET');
+    const data = await callAPI(`https://meme-api.com/gimme/${amountOfMemes}`,'GET');
     return data;
   } catch (error) {
     console.log(error);
