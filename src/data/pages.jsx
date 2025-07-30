@@ -1,6 +1,7 @@
 import ShimmerUI from "../pages/shimmer/ShimmerUI"
 import InfiniteScroll from "../pages/infiniteScroll/InfiniteScroll"
 import Accordion from "../pages/accordian/Accordion"
+import NestedComments from "../pages/NestedComments/NestedComments"
 
 export const pages = [
   {
@@ -17,5 +18,10 @@ export const pages = [
     name: 'Accordian',
     path: '/accordian',
     element: <Accordion/>
+  },
+  {
+    name: 'Nested Comments',
+    path: '/comments',
+    element: <NestedComments/>
   },
 ]
