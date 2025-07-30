@@ -1,6 +1,8 @@
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { useRef } from "react";
 
 const AccordionItem = ({ heading, body, showBody, handleDropdownClick, index }) => {
+  const contentRef = useRef(null);
 
   return (
     <div className="border-b border-gray-300">
@@ -14,13 +16,20 @@ const AccordionItem = ({ heading, body, showBody, handleDropdownClick, index }) 
         </div>
       </div>
 
-      {showBody && (
-        <div className="w-full bg-white px-4 py-3 text-gray-700">
+      <div
+        ref={contentRef}
+        className="w-full bg-white px-4 box-border text-gray-700"
+        style={{
+          transition: "height 0.3s ease",
+          overflow: "hidden",
+          height: showBody ? contentRef.current.scrollHeight + "px" : "0px"
+        }}
+      >
+        <div className="py-3">
           {body}
         </div>
-      )}
+      </div>
     </div>
-
   )
 }
 
