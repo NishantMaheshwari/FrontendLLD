@@ -1,4 +1,4 @@
-export const comments = [
+export const commentsData = [
   {
     "id": 1,
     "author": "wanderlust_92",
