@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { sliderImages } from '../../data/carousel'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-const Carousel = () => {
+const ImageSlider = () => {
   const [activeImage, setActiveImage] = useState(0);
   const numImages = sliderImages.length;
 
@@ -38,4 +38,4 @@ const Carousel = () => {
   )
 }
 
-export default Carousel
+export default ImageSlider
