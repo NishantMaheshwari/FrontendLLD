@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import './sliderAnimation.css';
 
-const ImageSliderAnimation = ({ children }) => {
+const ImageSliderFadeAnimation = ({ children }) => {
   const [activeImage, setActiveImage] = useState(0);
   const containerRef = useRef(null);
   const intervalRef = useRef(null);
@@ -52,10 +52,10 @@ const ImageSliderAnimation = ({ children }) => {
     [...slides].forEach((slide, ind) => {
       slide.setAttribute('data-visible', ind === activeImage);
     });
-    startAutoScroll();
-    return () => {
-      clearInterval(intervalRef.current);
-    }
+    // startAutoScroll();
+    // return () => {
+    //   clearInterval(intervalRef.current);
+    // }
   }, []);
 
   return (
@@ -71,4 +71,4 @@ const ImageSliderAnimation = ({ children }) => {
   );
 }
 
-export default ImageSliderAnimation
+export default ImageSliderFadeAnimation

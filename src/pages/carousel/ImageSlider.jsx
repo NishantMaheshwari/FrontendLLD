@@ -6,14 +6,14 @@ const ImageSlider = () => {
   const [activeImage, setActiveImage] = useState(0);
   const numImages = sliderImages.length;
 
-  useEffect(() => {
-    const imageInterval = setInterval(() => {
-      handleNextScroll();
-    }, 3000);
-    return () => {
-      clearInterval(imageInterval);
-    }
-  }, [])
+  // useEffect(() => {
+  //   const imageInterval = setInterval(() => {
+  //     handleNextScroll();
+  //   }, 3000);
+  //   return () => {
+  //     clearInterval(imageInterval);
+  //   }
+  // }, [])
 
   const handleNextScroll = () => {
     setActiveImage((prev) => {
