@@ -3,6 +3,7 @@ import InfiniteScroll from "../pages/infiniteScroll/InfiniteScroll"
 import Accordion from "../pages/accordian/Accordion"
 import NestedComments from "../pages/NestedComments/NestedComments"
 import Carousels from "../pages/carousel"
+import Paginations from "../pages/pagination"
 
 export const pages = [
   {
@@ -29,5 +30,10 @@ export const pages = [
     name: 'Carousel',
     path: '/carousel',
     element: <Carousels/>
+  },
+  {
+    name: 'Pagination',
+    path: '/pagination',
+    element: <Paginations/>
   },
 ]
