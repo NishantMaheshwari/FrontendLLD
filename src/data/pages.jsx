@@ -4,6 +4,7 @@ import Accordion from "../pages/accordian/Accordion"
 import NestedComments from "../pages/NestedComments/NestedComments"
 import Carousels from "../pages/carousel"
 import Paginations from "../pages/pagination"
+import LiveChat from "../pages/liveChat/LiveChat"
 
 export const pages = [
   {
@@ -35,5 +36,10 @@ export const pages = [
     name: 'Pagination',
     path: '/pagination',
     element: <Paginations/>
+  },
+  {
+    name: 'Live Chat',
+    path: '/live-chat',
+    element: <LiveChat/>
   },
 ]
