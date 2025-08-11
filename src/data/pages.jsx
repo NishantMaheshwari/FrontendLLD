@@ -5,41 +5,47 @@ import NestedComments from "../pages/NestedComments/NestedComments"
 import Carousels from "../pages/carousel"
 import Paginations from "../pages/pagination"
 import LiveChat from "../pages/liveChat/LiveChat"
+import AutoComplete from "../pages/searchBar/AutoComplete"
 
 export const pages = [
   {
     name: 'Shimmer',
     path: '/shimmer',
-    element: <ShimmerUI/>,
+    element: <ShimmerUI />,
   },
   {
     name: 'Infinite Scroll',
     path: '/scroll',
-    element: <InfiniteScroll/>
+    element: <InfiniteScroll />
   },
   {
     name: 'Accordian',
     path: '/accordian',
-    element: <Accordion/>
+    element: <Accordion />
   },
   {
     name: 'Nested Comments',
     path: '/comments',
-    element: <NestedComments/>
+    element: <NestedComments />
   },
   {
     name: 'Carousel',
     path: '/carousel',
-    element: <Carousels/>
+    element: <Carousels />
   },
   {
     name: 'Pagination',
     path: '/pagination',
-    element: <Paginations/>
+    element: <Paginations />
   },
   {
     name: 'Live Chat',
     path: '/live-chat',
-    element: <LiveChat/>
+    element: <LiveChat />
+  },
+  {
+    name: 'Autocomplete Search',
+    path: '/search-bar',
+    element: <AutoComplete />
   },
 ]

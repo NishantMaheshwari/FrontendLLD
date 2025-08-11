@@ -28,7 +28,16 @@ export const fetchShimmerData = async (amountOfMemes = 20) => {
 
 export const fetchPaginationData = async (limit = 10, skip = 0) => {
   try {
-    const response = callAPI(`https://dummyjson.com/products?limit=${limit}&skip=${skip}&select=id,title,price,description,thumbnail`,'GET');
+    const response = await callAPI(`https://dummyjson.com/products?limit=${limit}&skip=${skip}&select=id,title,price,description,thumbnail`, 'GET');
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export const fetchAutocompleteSuggestions = async (queryString) => {
+  try {
+    const response = await callAPI(`https://dummyjson.com/recipes/search?q=${queryString}`, 'GET');
     return response;
   } catch (error) {
     console.log(error);
