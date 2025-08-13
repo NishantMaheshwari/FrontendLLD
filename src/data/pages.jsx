@@ -6,6 +6,7 @@ import Carousels from "../pages/carousel"
 import Paginations from "../pages/pagination"
 import LiveChat from "../pages/liveChat/LiveChat"
 import AutoComplete from "../pages/searchBar/AutoComplete"
+import OtpParent from "../pages/otp"
 
 export const pages = [
   {
@@ -47,5 +48,10 @@ export const pages = [
     name: 'Autocomplete Search',
     path: '/search-bar',
     element: <AutoComplete />
+  },
+  {
+    name: 'OTP',
+    path: '/otp',
+    element: <OtpParent />
   },
 ]
