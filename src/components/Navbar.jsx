@@ -3,7 +3,7 @@ import { pages } from '../data/pages.jsx'
 
 const Navbar = () => {
 	return (
-		<div className='flex justify-center gap-3'>
+		<div className='flex justify-center gap-3 flex-wrap'>
 
 			{pages.map((page) => (
 			<Link

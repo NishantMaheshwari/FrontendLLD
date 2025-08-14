@@ -7,6 +7,7 @@ import Paginations from "../pages/pagination"
 import LiveChat from "../pages/liveChat/LiveChat"
 import AutoComplete from "../pages/searchBar/AutoComplete"
 import OtpParent from "../pages/otp"
+import ProgressBarWrapper from "../pages/progress"
 
 export const pages = [
   {
@@ -53,5 +54,10 @@ export const pages = [
     name: 'OTP',
     path: '/otp',
     element: <OtpParent />
+  },
+  {
+    name: 'Progress Bar',
+    path: '/progress',
+    element: <ProgressBarWrapper />
   },
 ]

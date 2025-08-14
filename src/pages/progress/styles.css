@@ -1,0 +1,18 @@
+.outer-container {
+  width: 60vw;
+  height: 4vw;
+  background-color: coral;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.inner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: cornflowerblue;
+  transition: transform 0.6s ease-in-out;
+}
