@@ -6,6 +6,10 @@ const ProgressBar = ({ value, max }) => {
   return (
     <div className='outer-container'>
       <div className="inner-container"
+        role='progressbar'
+        aria-valuenow={shift}
+        aria-valuemin={0}
+        aria-valuemax={max}
         style={{ transform: `translateX(${shift})` }}></div>
     </div>
   )
