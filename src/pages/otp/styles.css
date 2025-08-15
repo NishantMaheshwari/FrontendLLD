@@ -1,4 +1,4 @@
-div input[type='text'] {
+/* div input[type='text'] {
   width: 5vw;
   height: 5vw;
   background: black;
@@ -6,7 +6,7 @@ div input[type='text'] {
   text-align: center;
   font-size: 24px;
   border-radius: 10px;
-}
+} */
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

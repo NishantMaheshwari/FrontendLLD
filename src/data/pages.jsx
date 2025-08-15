@@ -8,6 +8,7 @@ import LiveChat from "../pages/liveChat/LiveChat"
 import AutoComplete from "../pages/searchBar/AutoComplete"
 import OtpParent from "../pages/otp"
 import ProgressBarWrapper from "../pages/progress"
+import TabForm from "../pages/tabForm/TabForm"
 
 export const pages = [
   {
@@ -59,5 +60,10 @@ export const pages = [
     name: 'Progress Bar',
     path: '/progress',
     element: <ProgressBarWrapper />
+  },
+  {
+    name: 'Tab Form',
+    path: '/form',
+    element: <TabForm />
   },
 ]
