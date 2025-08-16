@@ -9,6 +9,7 @@ import AutoComplete from "../pages/searchBar/AutoComplete"
 import OtpParent from "../pages/otp"
 import ProgressBarWrapper from "../pages/progress"
 import TabForm from "../pages/tabForm/TabForm"
+import NestedCheckbox from "../pages/nestedCheckboxes/NestedCheckbox"
 
 export const pages = [
   {
@@ -65,5 +66,10 @@ export const pages = [
     name: 'Tab Form',
     path: '/form',
     element: <TabForm />
+  },
+  {
+    name: 'Nested Checkboxes',
+    path: '/checkbox',
+    element: <NestedCheckbox />
   },
 ]
