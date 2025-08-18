@@ -10,6 +10,7 @@ import OtpParent from "../pages/otp"
 import ProgressBarWrapper from "../pages/progress"
 import TabForm from "../pages/tabForm/TabForm"
 import NestedCheckbox from "../pages/nestedCheckboxes/NestedCheckbox"
+import DragDrop from "../pages/dragDrop/DragDrop"
 
 export const pages = [
   {
@@ -71,5 +72,10 @@ export const pages = [
     name: 'Nested Checkboxes',
     path: '/checkbox',
     element: <NestedCheckbox />
+  },
+  {
+    name: 'Drag and Drop',
+    path: '/drag-drop',
+    element: <DragDrop />
   },
 ]
