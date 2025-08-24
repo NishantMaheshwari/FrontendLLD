@@ -1,0 +1,13 @@
+.tct-box:nth-child(4),
+.tct-box:nth-child(5),
+.tct-box:nth-child(6){
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.tct-box:nth-child(2),
+.tct-box:nth-child(5),
+.tct-box:nth-child(8){
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}

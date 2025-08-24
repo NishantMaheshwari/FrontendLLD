@@ -11,6 +11,7 @@ import ProgressBarWrapper from "../pages/progress"
 import TabForm from "../pages/tabForm/TabForm"
 import NestedCheckbox from "../pages/nestedCheckboxes/NestedCheckbox"
 import DragDrop from "../pages/dragDrop/DragDrop"
+import TicTacToe from "../pages/ticTacToe"
 
 export const pages = [
   {
@@ -77,5 +78,10 @@ export const pages = [
     name: 'Drag and Drop',
     path: '/drag-drop',
     element: <DragDrop />
+  },
+  {
+    name: 'Tic Tac Toe',
+    path: '/tic-tac-toe',
+    element: <TicTacToe />
   },
 ]
