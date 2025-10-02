@@ -16,10 +16,24 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderMemes(data.memes);
 });
 
+let lastScrollTime = 0;
+let isFetching = false;
+const THROTTLE_DELAY = 500; // milliseconds
+
 document.addEventListener('scroll', async () => {
-  const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-  if (scrollTop + clientHeight >= scrollHeight - 2) {
-    const data = await fetchShimmerData(10);
-    renderMemes(data.memes);
+  const now = Date.now();
+  if (now - lastScrollTime < THROTTLE_DELAY) return; // throttle
+  lastScrollTime = now;
+
+  const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+
+  if (scrollTop + clientHeight >= scrollHeight - 2 && !isFetching) {
+    isFetching = true;
+    try {
+      const data = await fetchShimmerData(10);
+      renderMemes(data.memes);
+    } finally {
+      isFetching = false; // release lock
+    }
   }
 });
