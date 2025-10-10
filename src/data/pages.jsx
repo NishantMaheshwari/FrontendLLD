@@ -12,6 +12,7 @@ import TabForm from "../pages/tabForm/TabForm"
 import NestedCheckbox from "../pages/nestedCheckboxes/NestedCheckbox"
 import DragDrop from "../pages/dragDrop/DragDrop"
 import TicTacToe from "../pages/ticTacToe"
+import ToastContainer from "../pages/toast"
 
 export const pages = [
   {
@@ -83,5 +84,10 @@ export const pages = [
     name: 'Tic Tac Toe',
     path: '/tic-tac-toe',
     element: <TicTacToe />
+  },
+  {
+    name: 'Toast',
+    path: '/toast',
+    element: <ToastContainer />
   },
 ]
