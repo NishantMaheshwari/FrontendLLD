@@ -8,13 +8,10 @@ const useToast = (position = 'top-right') => {
     setToasts(prev => prev.filter(toast => toast.id !== toastId));
   }
 
-  const handleAddingToast = (type, text) => {
+  const handleAddingToast = (type, text, duration) => {
     setToasts(prev => {
       const currentId = Date.now();
-      setTimeout(() => {
-        handleRemove(currentId);
-      }, 3000);
-      return [...prev, { id: currentId, type, text }];
+      return [...prev, { id: currentId, type, text, duration }];
     });
   }
 
@@ -24,7 +21,7 @@ const useToast = (position = 'top-right') => {
         {
           toasts.map(toast => {
             return (
-              <Toast toast={toast} onClose={handleRemove} />
+              <Toast key={toast.id} toast={toast} onClose={handleRemove} />
             )
           })
         }

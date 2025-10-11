@@ -6,10 +6,10 @@ const ToastContainer = () => {
   const [ToastContainer, handleAddingToast] = useToast();
   return (
     <div className='toast-container'>
-      <button className='toast-btn' onClick={() => handleAddingToast('success', 'Congratulations!!')}>
+      <button className='toast-btn' onClick={() => handleAddingToast('success', 'Congratulations!!', 3000)}>
         Success
       </button>
-      <button className='toast-btn' onClick={() => handleAddingToast('failure', 'Better luck next time.')}>
+      <button className='toast-btn' onClick={() => handleAddingToast('failure', 'Better luck next time.', 3000)}>
         Failure
       </button>
       {ToastContainer}
