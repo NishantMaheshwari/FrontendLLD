@@ -1,0 +1,29 @@
+.stop-watch{
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+}
+
+.stop-watch-time{
+  font-size: 5vw;
+  font-weight: bolder;
+}
+
+.stop-watch-btn-container{
+  display: flex;
+  gap: 4vw;
+}
+
+.stop-watch-btn{
+  cursor: pointer;
+  width: 6vw;
+  height: 4vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+}

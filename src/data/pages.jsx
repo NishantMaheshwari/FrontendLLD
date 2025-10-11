@@ -13,6 +13,7 @@ import NestedCheckbox from "../pages/nestedCheckboxes/NestedCheckbox"
 import DragDrop from "../pages/dragDrop/DragDrop"
 import TicTacToe from "../pages/ticTacToe"
 import ToastContainer from "../pages/toast"
+import StopWatch from "../pages/stopWatch"
 
 export const pages = [
   {
@@ -89,5 +90,10 @@ export const pages = [
     name: 'Toast',
     path: '/toast',
     element: <ToastContainer />
+  },
+  {
+    name: 'StopWatch',
+    path: '/stop-watch',
+    element: <StopWatch />
   },
 ]
