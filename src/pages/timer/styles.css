@@ -1,0 +1,38 @@
+.timer-container{
+  width: 100%;
+  margin-top: 18vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6vh;
+}
+
+.timer-value{
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+input{
+  width: 7vw;
+  height: 7vw;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.timer-btn-container{
+  display: flex;
+  gap: 3vw;
+}
+
+.timer-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  background-color: blueviolet;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -14,6 +14,7 @@ import DragDrop from "../pages/dragDrop/DragDrop"
 import TicTacToe from "../pages/ticTacToe"
 import ToastContainer from "../pages/toast"
 import StopWatch from "../pages/stopWatch"
+import Timer from "../pages/timer"
 
 export const pages = [
   {
@@ -95,5 +96,10 @@ export const pages = [
     name: 'StopWatch',
     path: '/stop-watch',
     element: <StopWatch />
+  },
+  {
+    name: 'Timer',
+    path: '/timer',
+    element: <Timer />
   },
 ]
