@@ -15,6 +15,7 @@ import TicTacToe from "../pages/ticTacToe"
 import ToastContainer from "../pages/toast"
 import StopWatch from "../pages/stopWatch"
 import Timer from "../pages/timer"
+import Snake from "../pages/snake"
 
 export const pages = [
   {
@@ -101,5 +102,10 @@ export const pages = [
     name: 'Timer',
     path: '/timer',
     element: <Timer />
+  },
+  {
+    name: 'Snake Game',
+    path: '/snake',
+    element: <Snake />
   },
 ]

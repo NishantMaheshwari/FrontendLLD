@@ -1,0 +1,25 @@
+.row{
+  display: flex;
+}
+
+.cell{
+  width: 2vw;
+  height: 2vw;
+  border: 2px solid black;
+}
+
+.snake-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.snake{
+  background-color: green;
+}
+
+.food{
+  background-color: red;
+}
