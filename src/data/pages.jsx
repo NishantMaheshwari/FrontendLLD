@@ -16,6 +16,7 @@ import ToastContainer from "../pages/toast"
 import StopWatch from "../pages/stopWatch"
 import Timer from "../pages/timer"
 import Snake from "../pages/snake"
+import GridLights from "../pages/girdLight"
 
 export const pages = [
   {
@@ -107,5 +108,10 @@ export const pages = [
     name: 'Snake Game',
     path: '/snake',
     element: <Snake />
+  },
+  {
+    name: 'Grid lights',
+    path: '/grid-lights',
+    element: <GridLights />
   },
 ]
